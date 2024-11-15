@@ -378,27 +378,56 @@
             transform: translateY(-2px);
             background-color: #357ABD; /* Darker blue on hover */
         }
-        .form-message {
-            padding: 1rem;
-            margin-bottom: 1rem;
+        #resume {
+            background-color: var(--blue-4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .resume-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .resume-container h2 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 800px;
+            margin: 2rem 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
             border-radius: 4px;
-            display: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
         }
-        
-        .form-message.success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-            display: block;
+
+        .download-button:hover {
+            background-color: #723688;
         }
-        
-        .form-message.error {
-            background-color: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-            display: block;
+
+        @media (max-width: 768px) {
+            .pdf-container {
+                height: 500px;
+            }
         }
-        
         
 
         #about { background-color: var(--blue-1); }
@@ -480,6 +509,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#roles">Roles</a></li>
             <li><a href="#training">Training</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -580,6 +610,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="resume-container">
+            <h2>My Resume</h2>
+            <p>View or download my complete performance resume below</p>
+            
+            <!-- Replace 'path-to-your-resume.pdf' with the actual path to your PDF file -->
+            <embed 
+                src="Aria Evans Resume for Auditions '25.pdf" 
+                type="application/pdf" 
+                class="pdf-container"
+            />
+            
+            <!-- Replace 'path-to-your-resume.pdf' with the actual path to your PDF file -->
+            <a href="path-to-your-resume.pdf" class="download-button" download>
+                Download Resume (PDF)
+            </a>
         </div>
     </section>
 
