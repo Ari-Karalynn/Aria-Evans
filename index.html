@@ -6,15 +6,16 @@
     <title>Aria Evans - Musical Theater Portfolio</title>
     <style>
         :root {
-            --primary: #2c3e50;
-            --secondary: #34495e;
-            --accent: #8e44ad;
-            --light: #ecf0f1;
-            --text: #333333;
-            --blue-1: #C5D5E4;
-            --blue-2: #9bc8e5;
-            --blue-3: #5B85AA;
-            --blue-4: #e6f3f7;
+            --primary: #2C4A3E;     /* Dark Forest Green */
+            --secondary: #40675B;    /* Medium Forest Green */
+            --accent: #8B5E3C;       /* Warm Brown */
+            --light: #F5F1EC;        /* Light Beige */
+            --text: #2B2522;         /* Dark Brown Text */
+            --earth-1: #E5DED3;      /* Light Taupe */
+            --earth-2: #C2B280;      /* Sand */
+            --earth-3: #6B4423;      /* Deep Brown */
+            --earth-4: #EAE6DD;      /* Cream */
+
         }
 
         * {
@@ -24,7 +25,7 @@
         }
 
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Cambria', serif;
             line-height: 1.6;
             color: var(--text);
             background-color: var(--light);
@@ -73,7 +74,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('HS2.1.jpg');
+            background: linear-gradient(rgba(44, 74, 62, 0.7), rgba(44, 74, 62, 0.7)), url('HS2.1.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -115,7 +116,7 @@
         }
 
         .role-card {
-            background: white;
+            background: var(--light);
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -205,7 +206,7 @@
         }
 
         .contact-form button:hover {
-            background-color: #723688;
+            background-color: var(--earth-3);
         }
 
         footer {
@@ -261,7 +262,7 @@
         .education-header {
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 2px solid #4A90E2;
+            border-bottom: 2px solid var(--accent);
         }
         
         .education-header h3 {
@@ -296,7 +297,7 @@
         
         .achievement-list li:before {
             content: "•";
-            color: #4A90E2;
+            color: var(--accent);
             font-weight: bold;
             position: absolute;
             left: 0;
@@ -305,9 +306,9 @@
         .training-category {
             margin: 1.5rem 0;
             padding: 1rem;
-            background: rgba(74, 144, 226, 0.05);
+            background: rgba(139, 94, 60, 0.05);
             border-radius: 8px;
-            border-left: 4px solid #4A90E2;
+            border-left: 4px solid var(--accent);
         }
         
         .training-category h5 {
@@ -330,14 +331,14 @@
         }
         
         .highlight {
-            color: #4A90E2;
+            color: var(--accent);
             font-weight: 500;
         }
         
         .vertical-divider {
             width: 2px;
             align-self: stretch;
-            background-color: #4A90E2; /* Matching blue for divider */
+            background-color: var(--accent);
         }
 
         .skills-section {
@@ -363,7 +364,7 @@
         }
         
         .skill-tag {
-            background-color: #4A90E2; /* Base blue color */
+            background-color: var(--accent);
             color: white;
             padding: 0.8rem 1.5rem;
             border-radius: 25px;
@@ -376,7 +377,7 @@
         
         .skill-tag:hover {
             transform: translateY(-2px);
-            background-color: #357ABD; /* Darker blue on hover */
+            background-color: var(--earth-3);
         }
         #resume {
             background-color: var(--blue-4);
@@ -420,7 +421,7 @@
         }
 
         .download-button:hover {
-            background-color: #723688;
+            background-color: var(--earth-3);
         }
         .social-icons {
             display: flex;
@@ -483,13 +484,13 @@
         }
         
 
-        #about { background-color: var(--blue-1); }
-        #roles { background-color: var(--blue-2); }
+        #about { background-color: var(--earth-1); }
+        #roles { background-color: var(--earth-2); }
         #training {
-            background-color: var(--blue-3);
-            padding: 4rem 2rem;
+            background-color: var(--earth-3);
+            color: var(--light);
         }
-        #contact { background-color: var(--blue-4); }
+        #contact { background-color: var(--earth-4); }
 
         @keyframes fadeInUp {
             from {
