@@ -253,6 +253,86 @@
             margin-bottom: 0.5rem;
             color: var(--text);
         }
+        .education-section {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        
+        .education-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #4A90E2;
+        }
+        
+        .education-header h3 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-header h4 {
+            color: #4A90E2;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .achievement-list {
+            list-style: none;
+            margin: 1rem 0;
+            padding: 0;
+        }
+        
+        .achievement-list li {
+            padding: 0.5rem 0;
+            color: #333;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .achievement-list li:before {
+            content: "•";
+            color: #4A90E2;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .training-category {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(74, 144, 226, 0.05);
+            border-radius: 8px;
+            border-left: 4px solid #4A90E2;
+        }
+        
+        .training-category h5 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .training-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .training-list li {
+            padding: 0.4rem 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .highlight {
+            color: #4A90E2;
+            font-weight: 500;
+        }
         
         .vertical-divider {
             width: 2px;
@@ -407,7 +487,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Aria Evans</h1>
-            <p>Musical Theater Performer • Singer • Dancer • Actor</p>
+            <p>Actor • Singer • Strong Mover</p>
         </div>
     </section>
 
@@ -416,31 +496,31 @@
             <h2>About Me</h2>
             <img src="HS1.jpg" alt="Aria Evans" class="about-image">
             <p class="about-text">
-                As a senior in the Musical Theater program at Bowling Green State University, I've dedicated the past four years to honing my craft and pushing the boundaries of my artistic expression.  With a natural <span class="text-highlight">tenor range</span> and extensive training in various dance styles, I bring a versatile skill set to every production. My recent role as JD in "Heathers" allowed me to explore the complexities of anti-hero characterization, while my work in "The Harvest" challenged me to develop authentic character relationships through ensemble work. Beyond performance. My goal is to create meaningful connections with audiences by bringing authenticity and depth to every character I portray. When not on stage, -insert details here-.
+                A passionate actor with a powerful tenor voice and extensive acting training. Aria is charismatic, unabashed, naturally curious, tenacious, and youthfully imaginative.  They are currently pursuing their BAC in Theatre with a Specialization in Musical Theatre.            
             </p>       
         </div>
     </section>
 
     <section id="roles">
         <div class="roles-container">
-            <h2>Featured Roles</h2>
+            <h2>Recent and Upcoming Roles</h2>
             <div class="roles-grid">
                 <div class="role-card">
                     <img src="Role2.jpg" alt="The Amateurs" class="role-image">
                     <div class="role-content">
-                        <h3 class="role-title">That One Guy</h3>
-                        <p class="role-production">The Amateurs</p>
-                        <p class="role-venue">Bowling Green State University</p>
-                        <p class="role-date">Spring 2024</p>
+                        <h3>Pearl Krabs</h3>
+                        <p>SpongeBob SquarePants</p>
+                        <p>Bowling Green State University Main Stage</p>
+                        <p>Spring 2025</p>
                     </div>
                 </div>
                 <div class="role-card">
                     <img src="/api/placeholder/400/200" alt="Meathers" class="role-image">
                     <div class="role-content">
-                        <h3 class="role-title">JD</h3>
-                        <p class="role-production">Heathers</p>
-                        <p class="role-venue">Bowling Green State University</p>
-                        <p class="role-date">Summer 2023</p>
+                        <h3>JD</h3>
+                        <p>Heathers</p>
+                        <p>Bowling Green State University Main Stage</p>
+                        <p>Spring 2024</p>
                     </div>
                 </div>
 
@@ -492,14 +572,35 @@
             <h2>Training & Expertise</h2>
             <div class="training-grid">
                 <div class="education-section">
-                    <h3>Education</h3>
-                    <h4>Bowling Green State University</h4>
-                    <p>BA in Musical Theater (Expected 2025)</p>
-                    <ul>
+                    <div class="education-header">
+                        <h3>Education</h3>
+                        <h4>Bowling Green State University</h4>
+                        <p>BAC in Theatre with a Specialization in Musical Theater <span class="highlight">(Expected 2025)</span></p>
+                    </div>
+                
+                    <ul class="achievement-list">
                         <li>Dean's List 2023-2024</li>
                         <li>Musical Theater Program Lead</li>
                         <li>Theater Department Student Representative</li>
                     </ul>
+                
+                    <div class="training-category">
+                        <h5>Performance Training</h5>
+                        <ul class="training-list">
+                            <li><span class="highlight">Voice:</span> Dr. Geoff Stephenson</li>
+                            <li><span class="highlight">Acting:</span> Sara Chambers, Dr. Jonathan Chambers, James Stover</li>
+                            <li><span class="highlight">Dance:</span> Colleen Murphy</li>
+                        </ul>
+                    </div>
+                
+                    <div class="training-category">
+                        <h5>Notable Achievements</h5>
+                        <ul class="training-list">
+                            <li>Assistant Director for Poor Clare, a Bowling Green State University Main Stage</li>
+                            <li>Jade in Proxemics, a student film</li>
+                            <li>Thrice nominated for the KCACTF Irene Ryan Acting Scholarship</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="vertical-divider"></div>
                 <div class="skills-section">
@@ -509,17 +610,7 @@
                             <span class="skill-tag">Tenor</span>
                             <span class="skill-tag">Ballet</span>
                         </div>
-                        <div class="skill-row">
-                            <span class="skill-tag">Jazz</span>
-                            <span class="skill-tag">Tap</span>
-                        </div>
-                        <div class="skill-row">
-                            <span class="skill-tag">Contemporary</span>
-                            <span class="skill-tag">Method Acting</span>
-                        </div>
-                        <div class="skill-row">
-                            <span class="skill-tag">Stage Combat</span>
-                            <span class="skill-tag">Improv</span>
+                        
                         </div>
                     </div>
                 </div>
